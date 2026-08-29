@@ -1,0 +1,147 @@
+:root {
+  color: #252525;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: min(760px, calc(100% - 36px));
+  margin: 64px auto;
+}
+
+a {
+  color: #175b88;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 48px;
+}
+
+.profile img {
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 9px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 38px;
+  line-height: 1.15;
+}
+
+.position,
+.institution {
+  margin-bottom: 1px;
+}
+
+.institution {
+  color: #666;
+}
+
+.bio {
+  max-width: 540px;
+  margin-top: 20px;
+}
+
+.links {
+  margin-top: 17px;
+}
+
+.links span {
+  margin: 0 8px;
+  color: #aaa;
+}
+
+section {
+  padding: 28px 0;
+  border-top: 1px solid #ddd;
+}
+
+h2 {
+  margin-bottom: 17px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+}
+
+article {
+  margin-bottom: 23px;
+}
+
+article:last-child {
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-bottom: 2px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.meta {
+  margin-bottom: 5px;
+  color: #777;
+  font-size: 13px;
+}
+
+article > p:last-child {
+  margin-bottom: 0;
+}
+
+.education p {
+  margin-bottom: 16px;
+}
+
+.education p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 560px) {
+  main {
+    margin: 36px auto;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+
+  .profile img {
+    grid-row: 1;
+    width: 120px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
